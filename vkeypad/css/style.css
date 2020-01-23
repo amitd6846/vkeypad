@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'VodafoneRg';
+    src: url(../fonts/VodafoneRg.eot?#iefix) format('embedded-opentype'), url(../fonts/VodafoneRg.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'VodafoneRgBd';
+    src: url(../fonts/VodafoneRgBd.eot?#iefix) format('embedded-opentype'), url(../fonts/VodafoneRgBd.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'VodafoneLt';
+    src: url(../fonts/VodafoneLight.eot?#iefix) format('embedded-opentype'), url(../fonts/VodafoneLight.ttf) format('truetype')
+}
+* {
+    font-family: VodafoneRg;
+}
+:root {
+    --custom_padd: 30px;
+}
+img.banner_img {
+    width: 100%;
+    margin: 19px 0 0 0;
+}
+.ir_enterNumber {
+    height: 100vh;
+    position: relative;
+}
+.ir_enterNumber:after {
+    content: '';
+    -webkit-clip-path: polygon(0 0, 100vh 0, 100vh 68vh, 0 90vh);
+    clip-path: polygon(0 0, 100vh 0, 100vh 68vh, 0 90vh);
+    background-color: #e71818;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.banner_wrpr p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 7px 0;
+}
+.banner_wrpr>p:nth-child(2) {
+    max-width: 270px;
+}
+.banner_wrpr {
+    padding: 16px 0;
+    position: relative;
+    z-index: 2;
+}
+.vKeypad_wrpr {
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    padding: 24px 20px 14px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: calc(100% - var(--custom_padd));
+    margin: 0 auto;
+    bottom: 0;
+    z-index: 3;
+    transition: all 0.4s linear;
+}
+div#keypad+p {
+    display: none;
+}
+div#keypad.dail_p+p {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 5px 0 4px 0;
+    color: #000;
+}
+p.vKeypad_heading {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 24px 0;
+}
+.vKeypad_input_wrpr {
+    position: relative;
+}
+label.vkeypad_label.error_state {
+    position: absolute;
+    top: -5px;
+    left: 16px;
+    font-size: 11px;
+    line-height: 11px;
+    color: #c4c4c4;
+    padding: 0 7px;
+    background-color: #fff;
+    font-weight: normal;
+}
+input.vKeypad_input {
+    width: 100%;
+    line-height: 68px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    padding: 0 16px 0 18px;
+    font-size: 20px;
+    font-family: VodafoneRgBd;
+}
+button.vKeypad_btn {
+    background-color: #000;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    transition: all .4s linear;
+}
+button.vKeypad_btn[disabled] {
+    background-color: #C7C7C7;
+}
+.ir_enterNumber~.keypad table {
+    background-color: #fff;
+}
+.ir_enterNumber~.keypad table>tbody>tr>td {
+    border: 1px solid #fff;
+}
+.ir_enterNumber~.keypad.active {
+    width: calc(100% - var(--custom_padd));
+    z-index: 9;
+    right: 0;
+    margin: 0 auto;
+}
+input.vKeypad_input:focus {
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+button.vKeypad_btn:hover, button.vKeypad_btn:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.ir_enterNumber~.keypad.active * {
+    font-family: VodafoneRgBd;
+    font-size: 20px;
+}
+
+/* tset */
+
+#keypad {
+    margin: 0;
+    display: none;
+}
+#keypad.show_keypad {
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+#keypad.show_keypad .vKeypad_row {
+    width: 100%;
+}
+.vKeypad_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.vKeypad_row p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: VodafoneRg;
+    margin: 0;
+}
+
+/* #keypad.show_keypad .vKeypad_row p:nth-child(1), #keypad.show_keypad .vKeypad_row p:nth-child(3) {
+    width: 40%;
+} */
+
+p.back_btn img {
+    width: 30px;
+}
+p.vk_btn.done_btn span {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* tset */
+
+
+/* slick_slider start */
+
+.ir_slick_wrpr .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 8px;
+}
+.ir_slick_card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 0;
+    text-align: center;
+    margin: 0 16px 0 0px;
+    box-shadow: 2px 4px 14px 0 rgba(0, 0, 0, 0.05);
+    min-height: 88px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.banner_wrpr .ir_slick_card p {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+img.ir_slick_img {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+}
+.ir_slick_wrpr.hide_slick {
+    opacity: 0;
+}
+.ir_slick_wrpr {
+    transition: all .3s linear;
+    opacity: 1;
+}
+
+/* slick_slider end */

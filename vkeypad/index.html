@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic HTML Theme</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="emptyCode();">
+    <div class="container ir_enterNumber">
+        <div class="banner_wrpr">
+            <p>hello <b>world!</b></p>
+            <p>Travel anywhere in the world, we’ll always keep you connected</p>
+            <img src="img/enter-number-map.png" class="banner_img">
+            <div class="ir_slick_wrpr">
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/unlimited.svg" class="ir_slick_img">
+                        <p><b>unlimited</b><br>calls & data</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/world.svg" class="ir_slick_img">
+                        <p><b>one</b> pack 82<br>countries</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/headphone.svg" class="ir_slick_img">
+                        <p><b>24/7</b><br>support</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/no-bill.svg" class="ir_slick_img">
+                        <p><b>no</b> bill<br>shock</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/unlimited.svg" class="ir_slick_img">
+                        <p><b>unlimited</b><br>calls & data</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/world.svg" class="ir_slick_img">
+                        <p><b>one</b> pack 82<br>countries</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/headphone.svg" class="ir_slick_img">
+                        <p><b>24/7</b><br>support</p>
+                    </div>
+                </div>
+                <div class="ir_slick_card">
+                    <div class="ir_innr_wrpr">
+                        <img src="img/no-bill.svg" class="ir_slick_img">
+                        <p><b>no</b> bill<br>shock</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vKeypad_wrpr">
+            <p class="vKeypad_heading">let’s find a <b>suitable plan for you</b></p>
+            <form method="get">
+                <div class="vKeypad_input_wrpr">
+                    <label class="vkeypad_label error_state">Enter mobile number</label>
+                    <input id="custom_keypad" type="text" name="code" value="" maxlength="10" class="display vKeypad_input" readonly="readonly" onfocus="showKeys()" placeholder="" />
+                    <button class="vKeypad_btn" disabled><img src="img/vkeypad-btn.svg"></button>
+                </div>
+                <div id="keypad">
+                    <div class="vKeypad_row">
+                        <p class="vk_btn btn" onclick="addCode('1');">1</p>
+                        <p class="vk_btn btn" onclick="addCode('2');">2</p>
+                        <p class="vk_btn btn" onclick="addCode('3');">3</p>
+                    </div>
+                    <div class="vKeypad_row">
+                        <p class="vk_btn btn" onclick="addCode('4');">4</p>
+                        <p class="vk_btn btn" onclick="addCode('5');">5</p>
+                        <p class="vk_btn btn" onclick="addCode('6');">6</p>
+                    </div>
+                    <div class="vKeypad_row">
+                        <p class="vk_btn btn" onclick="addCode('7');">7</p>
+                        <p class="vk_btn btn" onclick="addCode('8');">8</p>
+                        <p class="vk_btn btn" onclick="addCode('9');">9</p>
+                    </div>
+                    <div class="vKeypad_row">
+                        <p class="vk_btn btn back_btn" id="backSpace" onclick="removeTextTag();"><img src="img/back-btn.svg"></p>
+                        <p class="vk_btn btn" onclick="addCode('0');">0</p>
+                        <p class="vk_btn btn done_btn" onclick="addCode('done');"><span>done</span></p>
+                    </div>
+                </div>
+                <p>have any issues, call on our toll free number : <b>199</b></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
